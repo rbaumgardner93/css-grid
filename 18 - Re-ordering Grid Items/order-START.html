@@ -21,6 +21,19 @@
     .container {
       display: grid;
       grid-gap: 20px;
+      grid-template-columns: repeat(10, 1fr);
+    }
+    .logo {
+      order: 2;
+      grid-column: span 2;
+    }
+    .nav {
+      order: 1;
+      grid-column: span 8;
+    }
+    .content {
+      order: 3;
+      grid-column: 1 / -1;
     }
   </style>
 </body>
